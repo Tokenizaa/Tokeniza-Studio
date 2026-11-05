@@ -1,0 +1,29 @@
+name: Relato de problema
+description: Registrar comportamento incorreto
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: observed
+    attributes:
+      label: Comportamento observado
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamento esperado
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Passos para reproduzir
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Commit, versão ou ambiente
+    validations:
+      required: false
