@@ -1,0 +1,31 @@
+name: Tarefa
+description: Registrar trabalho técnico ou documental
+title: "[TASK] "
+labels: ["task"]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexto
+      description: Problema ou necessidade.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Resultado esperado
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Critérios de aceitação
+      description: Como verificar que a tarefa foi concluída?
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: Riscos e dependências
+    validations:
+      required: false
